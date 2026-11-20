@@ -72,13 +72,13 @@ class StudentManager {
 
     static void header() {
         cout << left << setw(8) << "Roll" << setw(20) << "Name" << setw(6) << "Age"
-             << setw(15) << "Course" << setw(8) << "Marks" << "Grade\n";
-        cout << string(63, '-') << '\n';
+             << setw(20) << "Course" << setw(8) << "Marks" << "Grade\n";
+        cout << string(68, '-') << '\n';
     }
 
     static void row(const Student &s) {
         cout << left << setw(8) << s.roll << setw(20) << s.name << setw(6) << s.age
-             << setw(15) << s.course << setw(8) << fixed << setprecision(1) << s.marks
+             << setw(20) << s.course << setw(8) << fixed << setprecision(1) << s.marks
              << grade(s.marks) << '\n';
     }
 
