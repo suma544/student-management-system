@@ -1,0 +1,154 @@
+Output captured from Google Colab (Python 3 runtime, g++ -std=c++17)
+Notebook: https://colab.research.google.com/github/suma544/student-management-system/blob/main/Student_Management_System.ipynb
+Run date: 2026-11-20
+
+### Cell 1: %%writefile student_management.cpp
+Writing student_management.cpp
+
+### Cell 2: !g++ -std=c++17 -Wall -o student_management student_management.cpp
+Compiled successfully
+
+### Cell 3: %%writefile sample_input.txt
+Writing sample_input.txt
+
+### Cell 4: !./student_management < sample_input.txt
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Add Student ---
+Roll number: Name: Age: Course: Marks (0-100): Student added and saved to students.txt.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Add Student ---
+Roll number: Name: Age: Course: Marks (0-100): Student added and saved to students.txt.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Add Student ---
+Roll number: Name: Age: Course: Marks (0-100): Student added and saved to students.txt.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- All Students (3) ---
+Roll    Name                Age   Course              Marks   Grade
+--------------------------------------------------------------------
+101     Ravi Kumar          20    Computer Science    88.5    A
+102     Priya Sharma        21    Electronics         92.0    A+
+103     Arjun Reddy         19    Mechanical          67.0    C
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Search Student ---
+Enter roll number: Roll    Name                Age   Course              Marks   Grade
+--------------------------------------------------------------------
+102     Priya Sharma        21    Electronics         92.0    A+
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Update Student ---
+Enter roll number to update: Current record:
+Roll    Name                Age   Course              Marks   Grade
+--------------------------------------------------------------------
+103     Arjun Reddy         19    Mechanical          67.0    C
+New name: New age: New course: New marks (0-100): Record updated.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- Delete Student ---
+Enter roll number to delete: Student with roll 101 deleted.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- All Students (2) ---
+Roll    Name                Age   Course              Marks   Grade
+--------------------------------------------------------------------
+102     Priya Sharma        21    Electronics         92.0    A+
+103     Arjun Reddy         20    Mechanical          74.5    B
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: Exiting... Data saved in students.txt. Goodbye!
+
+### Cell 5: !cat students.txt
+Contents of students.txt:
+102|Priya Sharma|21|Electronics|92
+103|Arjun Reddy|20|Mechanical|74.5
+
+### Cell 6: !printf '2\n6\n' | ./student_management   (second run - data persists)
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice:
+--- All Students (2) ---
+Roll    Name                Age   Course              Marks   Grade
+--------------------------------------------------------------------
+102     Priya Sharma        21    Electronics         92.0    A+
+103     Arjun Reddy         20    Mechanical          74.5    B
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: Exiting... Data saved in students.txt. Goodbye!
