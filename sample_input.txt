@@ -1,0 +1,31 @@
+1
+101
+Ravi Kumar
+20
+Computer Science
+88.5
+1
+102
+Priya Sharma
+21
+Electronics
+92
+1
+103
+Arjun Reddy
+19
+Mechanical
+67
+2
+3
+102
+4
+103
+Arjun Reddy
+20
+Mechanical
+74.5
+5
+101
+2
+6
